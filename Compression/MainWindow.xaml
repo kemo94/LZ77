@@ -1,0 +1,24 @@
+﻿<Window x:Class="Compression.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Compression" Height="350" Width="525" FontSize="20">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"/>
+            <ColumnDefinition Width="322*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <SolidColorBrush Color="#FF3A00FF" Opacity="0.5"/>
+        </Grid.Background>
+        <Button Content="Compress" HorizontalAlignment="Left" Margin="78,144,0,0" VerticalAlignment="Top" Width="138" Height="50" FontSize="20" Click="Button_Click_1" Grid.ColumnSpan="2"/>
+        <Button Content="Decompress" HorizontalAlignment="Left" Margin="141,144,0,0" VerticalAlignment="Top" Width="138" Height="50" FontSize="20" Click="Button_Click_2" Grid.Column="1"/>
+        <TextBox x:Name="screen" HorizontalAlignment="Left" Height="107" Margin="78,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label Content="Original &#xD;&#xA;size" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" Height="60" Width="76" FontSize="20"/>
+        <Label Content="Compressed &#xD;&#xA;size" HorizontalAlignment="Left" Margin="38,194,0,0" VerticalAlignment="Top" Height="60" Width="195" FontSize="20" Grid.Column="1"/>
+        <TextBox x:Name="original" HorizontalAlignment="Left" Height="36" Margin="91,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <TextBox x:Name="Compressed" HorizontalAlignment="Left" Height="36" Margin="159,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" Grid.Column="1" IsEnabled="False"/>
+        <TextBox x:Name="ratio" HorizontalAlignment="Left" Height="36" Margin="103,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="20" Grid.Column="1" IsEnabled="False"/>
+        <Label Content="Ratio" HorizontalAlignment="Left" Margin="38,259,0,0" VerticalAlignment="Top" Height="60" Width="65" FontSize="20" Grid.Column="1"/>
+
+    </Grid>
+</Window>
